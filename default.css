@@ -81,6 +81,7 @@ body {
   justify-content: center;
   height: 95vh;
   width: 95%;
+  background-img: image(dollar (1).jpg)
 }
 #clicker #clicked img{
   height: 95vs;
