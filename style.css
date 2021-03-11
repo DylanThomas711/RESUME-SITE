@@ -230,7 +230,7 @@ body #roulette-tab #numbers {
 
 body #roulette-tab #numbers button {
   height: 100px;
-  width: 10%;
+  width: 100%/12;
   border: 1px white solid;
   margin: -3px;
   background: red;
