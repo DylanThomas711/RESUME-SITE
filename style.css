@@ -213,6 +213,7 @@ body #resume-tab .resume .resume-item::before {
 
 body #roulette-tab {
   background-color: black;
+  color: white;
   height: 100%;
   width: 100%;
 }
