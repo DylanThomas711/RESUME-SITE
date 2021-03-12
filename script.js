@@ -96,7 +96,6 @@ $("#no50").on("click", function () { tokensPlaced = 50 });
 $("#no100").on("click", function () { tokensPlaced = 100 });
 $("#no500").on("click", function () { tokensPlaced = 500 });
 $("#no1000").on("click", function () { tokensPlaced = 1000 });
-setInterval(function () {
     if (tokens >= tokensPlaced) {
         $("#1").on("click", function () { num1 += 1 * tokensPlaced, tokens -= tokensPlaced });
         $("#2").on("click", function () { num2 += 1 * tokensPlaced, tokens -= tokensPlaced });
@@ -283,4 +282,3 @@ setInterval(function () {
             console.log(randy)
         })
     }
-}, 1000 / 23)
