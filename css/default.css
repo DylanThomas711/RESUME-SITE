@@ -1,6 +1,6 @@
 #ppc-upgrades {
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   background-color: black;
   
 }
@@ -17,7 +17,7 @@
 
 #pps-upgrades {
   width: 100%;
-  height: 6.66666666667vh;
+  height: 110vh;
   background-color: black;
 }
 
@@ -35,10 +35,12 @@
 }
 
 body {
-  background-color: #593;
+  background-color: black;
   color: white;
 }
-
+#clicker{
+  background: green;
+}
 #clicker .tax {
   margin-bottom: -78px;
   height: 100px;
