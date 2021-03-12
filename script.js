@@ -1,3 +1,4 @@
+`use strict`
 $(function () {
     $("#resume-tab").hide(1);
     $("#landing-tab").show(1);
