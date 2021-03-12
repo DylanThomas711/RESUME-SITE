@@ -96,6 +96,7 @@ $("#no50").on("click", function () { tokensPlaced = 50 });
 $("#no100").on("click", function () { tokensPlaced = 100 });
 $("#no500").on("click", function () { tokensPlaced = 500 });
 $("#no1000").on("click", function () { tokensPlaced = 1000 });
+    setInterval(function(){
     if (tokens >= tokensPlaced) {
         $("#1").on("click", function () { num1 += 1 * tokensPlaced, tokens -= tokensPlaced });
         $("#2").on("click", function () { num2 += 1 * tokensPlaced, tokens -= tokensPlaced });
@@ -142,6 +143,7 @@ $("#no1000").on("click", function () { tokensPlaced = 1000 });
         $("#chooseThirdDiv").on("click", function () { toThirtySix += 1 * tokensPlaced, tokens -= tokensPlaced });
         $("#chooseOneToEighteen").on("click", function () { toEighteen += 1 * tokensPlaced, tokens -= tokensPlaced });
         $("#chooseNineteenToThirtySix").on("click", function () { toThirtySix2 += 1 * tokensPlaced, tokens -= tokensPlaced });
+    }, 1000/25)
         $("#sub").on("click", function () {
             if (randy == 1 && num1 >= 1) {
                 tokens += num1 * 30;
