@@ -1,4 +1,4 @@
-$(function(){
+$(function () {
     $("#resume-tab").hide(1);
     $("#landing-tab").show(1);
     $("#roulette-tab").hide(1);
@@ -95,7 +95,7 @@ $("#no50").on("click", function () { tokensPlaced = 50 });
 $("#no100").on("click", function () { tokensPlaced = 100 });
 $("#no500").on("click", function () { tokensPlaced = 500 });
 $("#no1000").on("click", function () { tokensPlaced = 1000 });
-    setInterval(function(){
+setInterval(function () {
     if (tokens >= tokensPlaced) {
         $("#1").on("click", function () { num1 += 1 * tokensPlaced, tokens -= tokensPlaced });
         $("#2").on("click", function () { num2 += 1 * tokensPlaced, tokens -= tokensPlaced });
@@ -142,144 +142,144 @@ $("#no1000").on("click", function () { tokensPlaced = 1000 });
         $("#chooseThirdDiv").on("click", function () { toThirtySix += 1 * tokensPlaced, tokens -= tokensPlaced });
         $("#chooseOneToEighteen").on("click", function () { toEighteen += 1 * tokensPlaced, tokens -= tokensPlaced });
         $("#chooseNineteenToThirtySix").on("click", function () { toThirtySix2 += 1 * tokensPlaced, tokens -= tokensPlaced });
-    }, 1000/25)
-        $("#sub").on("click", function () {
-            if (randy == 1 && num1 >= 1) {
-                tokens += num1 * 30;
-            }
-            if (randy == 2 && num2 >= 1) {
-                tokens += num2 * 30;
-            }
-            if (randy == 3 && num3 >= 1) {
-                tokens += num3 * 30;
-            }
-            if (randy == 4 && num4 >= 1) {
-                tokens += num4 * 30;
-            }
-            if (randy == 5 && num5 >= 1) {
-                tokens += num5 * 30;
-            }
-            if (randy == 6 && num6 >= 1) {
-                tokens += num6 * 30;
-            }
-            if (randy == 7 && num7 >= 1) {
-                tokens += num7 * 30;
-            }
-            if (randy == 8 && num8 >= 1) {
-                tokens += num8 * 30;
-            }
-            if (randy == 9 && num9 >= 1) {
-                tokens += num9 * 30;
-            }
-            if (randy == 10 && num10 >= 1) {
-                tokens += num10 * 30;
-            }
-            if (randy == 11 && num11 >= 1) {
-                tokens += num11 * 30;
-            }
-            if (randy == 12 && num12 >= 1) {
-                tokens += num12 * 30;
-            }
-            if (randy == 13 && num13 >= 1) {
-                tokens += num13 * 30;
-            }
-            if (randy == 14 && num14 >= 1) {
-                tokens += num14 * 30;
-            }
-            if (randy == 15 && num15 >= 1) {
-                tokens += num15 * 30;
-            }
-            if (randy == 16 && num16 >= 1) {
-                tokens += num16 * 30;
-            }
-            if (randy == 17 && num17 >= 1) {
-                tokens += num17 * 30;
-            }
-            if (randy == 18 && num18 >= 1) {
-                tokens += num18 * 30;
-            }
-            if (randy == 19 && num19 >= 1) {
-                tokens += num19 * 30;
-            }
-            if (randy == 20 && num20 >= 1) {
-                tokens += num20 * 30;
-            }
-            if (randy == 21 && num21 >= 1) {
-                tokens += num21 * 30;
-            }
-            if (randy == 22 && num22 >= 1) {
-                tokens += num22 * 30;
-            }
-            if (randy == 23 && num23 >= 1) {
-                tokens += num23 * 30;
-            }
-            if (randy == 24 && num24 >= 1) {
-                tokens += num24 * 30;
-            }
-            if (randy == 25 && num25 >= 1) {
-                tokens += num25 * 30;
-            }
-            if (randy == 26 && num26 >= 1) {
-                tokens += num26 * 30;
-            }
-            if (randy == 27 && num27 >= 1) {
-                tokens += num27 * 30;
-            }
-            if (randy == 28 && num28 >= 1) {
-                tokens += num28 * 30;
-            }
-            if (randy == 29 && num29 >= 1) {
-                tokens += num29 * 30;
-            }
-            if (randy == 30 && num30 >= 1) {
-                tokens += num30 * 30;
-            }
-            if (randy == 31 && num31 >= 1) {
-                tokens += num31 * 30;
-            }
-            if (randy == 32 && num32 >= 1) {
-                tokens += num32 * 30;
-            }
-            if (randy == 33 && num33 >= 1) {
-                tokens += num33 * 30;
-            }
-            if (randy == 34 && num34 >= 1) {
-                tokens += num34 * 30;
-            }
-            if (randy == 35 && num35 >= 1) {
-                tokens += num35 * 30;
-            }
-            if (randy == 36 && num36 >= 1) {
-                tokens += num36 * 30;
-            }
-            if (randy % 2 === 0 && even >= 1) {
-                tokens += even * 2;
-            }
-            if (randy % 2 != 0 && odd >= 1) {
-                tokens += odd * 2;
-            }
-            if (randy % 2 == 0 && red >= 1) {
-                tokens += red * 2;
-            }
-            if (randy % 2 != 0 && black >= 1) {
-                tokens += black * 2;
-            }
-            if (randy <= 12 && toTwelve >= 1) {
-                tokens += toTwelve * 3;
-            }
-            if (randy >= 12 && randy <= 24 && toTwentyFour >= 1) {
-                tokens += toTwentyFour * 3;
-            }
-            if (randy >= 24 && randy <= 36 && toThirtySix >= 1) {
-                tokens += toThirtySix * 3;
-            }
-            if (randy <= 18 && toEighteen >= 1) {
-                tokens += toEighteen * 2;
-            }
-            if (randy <= 36 && randy >= 18 && toThirtySix2 >= 1) {
-                tokens += toThirtySix2 * 2;
-            }
-            randy = Math.ceil(Math.random() * 36);
-            console.log(randy)
-        })
     }
+}, 1000 / 25)
+$("#sub").on("click", function () {
+    if (randy == 1 && num1 >= 1) {
+        tokens += num1 * 30;
+    }
+    if (randy == 2 && num2 >= 1) {
+        tokens += num2 * 30;
+    }
+    if (randy == 3 && num3 >= 1) {
+        tokens += num3 * 30;
+    }
+    if (randy == 4 && num4 >= 1) {
+        tokens += num4 * 30;
+    }
+    if (randy == 5 && num5 >= 1) {
+        tokens += num5 * 30;
+    }
+    if (randy == 6 && num6 >= 1) {
+        tokens += num6 * 30;
+    }
+    if (randy == 7 && num7 >= 1) {
+        tokens += num7 * 30;
+    }
+    if (randy == 8 && num8 >= 1) {
+        tokens += num8 * 30;
+    }
+    if (randy == 9 && num9 >= 1) {
+        tokens += num9 * 30;
+    }
+    if (randy == 10 && num10 >= 1) {
+        tokens += num10 * 30;
+    }
+    if (randy == 11 && num11 >= 1) {
+        tokens += num11 * 30;
+    }
+    if (randy == 12 && num12 >= 1) {
+        tokens += num12 * 30;
+    }
+    if (randy == 13 && num13 >= 1) {
+        tokens += num13 * 30;
+    }
+    if (randy == 14 && num14 >= 1) {
+        tokens += num14 * 30;
+    }
+    if (randy == 15 && num15 >= 1) {
+        tokens += num15 * 30;
+    }
+    if (randy == 16 && num16 >= 1) {
+        tokens += num16 * 30;
+    }
+    if (randy == 17 && num17 >= 1) {
+        tokens += num17 * 30;
+    }
+    if (randy == 18 && num18 >= 1) {
+        tokens += num18 * 30;
+    }
+    if (randy == 19 && num19 >= 1) {
+        tokens += num19 * 30;
+    }
+    if (randy == 20 && num20 >= 1) {
+        tokens += num20 * 30;
+    }
+    if (randy == 21 && num21 >= 1) {
+        tokens += num21 * 30;
+    }
+    if (randy == 22 && num22 >= 1) {
+        tokens += num22 * 30;
+    }
+    if (randy == 23 && num23 >= 1) {
+        tokens += num23 * 30;
+    }
+    if (randy == 24 && num24 >= 1) {
+        tokens += num24 * 30;
+    }
+    if (randy == 25 && num25 >= 1) {
+        tokens += num25 * 30;
+    }
+    if (randy == 26 && num26 >= 1) {
+        tokens += num26 * 30;
+    }
+    if (randy == 27 && num27 >= 1) {
+        tokens += num27 * 30;
+    }
+    if (randy == 28 && num28 >= 1) {
+        tokens += num28 * 30;
+    }
+    if (randy == 29 && num29 >= 1) {
+        tokens += num29 * 30;
+    }
+    if (randy == 30 && num30 >= 1) {
+        tokens += num30 * 30;
+    }
+    if (randy == 31 && num31 >= 1) {
+        tokens += num31 * 30;
+    }
+    if (randy == 32 && num32 >= 1) {
+        tokens += num32 * 30;
+    }
+    if (randy == 33 && num33 >= 1) {
+        tokens += num33 * 30;
+    }
+    if (randy == 34 && num34 >= 1) {
+        tokens += num34 * 30;
+    }
+    if (randy == 35 && num35 >= 1) {
+        tokens += num35 * 30;
+    }
+    if (randy == 36 && num36 >= 1) {
+        tokens += num36 * 30;
+    }
+    if (randy % 2 === 0 && even >= 1) {
+        tokens += even * 2;
+    }
+    if (randy % 2 != 0 && odd >= 1) {
+        tokens += odd * 2;
+    }
+    if (randy % 2 == 0 && red >= 1) {
+        tokens += red * 2;
+    }
+    if (randy % 2 != 0 && black >= 1) {
+        tokens += black * 2;
+    }
+    if (randy <= 12 && toTwelve >= 1) {
+        tokens += toTwelve * 3;
+    }
+    if (randy >= 12 && randy <= 24 && toTwentyFour >= 1) {
+        tokens += toTwentyFour * 3;
+    }
+    if (randy >= 24 && randy <= 36 && toThirtySix >= 1) {
+        tokens += toThirtySix * 3;
+    }
+    if (randy <= 18 && toEighteen >= 1) {
+        tokens += toEighteen * 2;
+    }
+    if (randy <= 36 && randy >= 18 && toThirtySix2 >= 1) {
+        tokens += toThirtySix2 * 2;
+    }
+    randy = Math.ceil(Math.random() * 36);
+    console.log(randy)
+})
