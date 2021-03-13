@@ -70,7 +70,6 @@ setInterval(function () {
 }, 1000);
 setInterval(function () {
     $("#points").text(`${Math.floor(points)}`)
-    console.log(pointPerSecond);
 }, 10);
 //adding upgrades
 $("#upgrade1").text("100");
