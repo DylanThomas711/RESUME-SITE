@@ -1,3 +1,4 @@
+$(function(){
     $("#resume-tab").hide(1);
     $("#landing-tab").show(1);
     $("#roulette-tab").hide(1);
@@ -32,6 +33,7 @@
         $("#roulette-tab").show(1);
         $("#gallery").hide(1);
     })
+})
 //roulette\\
 let tokensPlaced = 0;
 let tokens = 10000;
