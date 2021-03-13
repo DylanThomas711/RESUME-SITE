@@ -1,4 +1,3 @@
-$(function(){
     $("#resume-tab").hide(1);
     $("#landing-tab").show(1);
     $("#roulette-tab").hide(1);
@@ -283,4 +282,3 @@ $("#no1000").on("click", function () { tokensPlaced = 1000 });
             console.log(randy)
         })
     }
- })
