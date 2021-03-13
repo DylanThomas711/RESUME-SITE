@@ -32,7 +32,6 @@
         $("#roulette-tab").show(1);
         $("#gallery").hide(1);
     })
-})
 //roulette\\
 let tokensPlaced = 0;
 let tokens = 10000;
