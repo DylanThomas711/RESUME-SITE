@@ -145,7 +145,7 @@ body #resume-tab .skills .progress-bar {
 }
 
 body #resume-tab .skills .progress-bar:hover {
-  background: linear-gradient(to right, black, white);
+  background: linear-gradient(to right, red, green);
 }
 
 body #resume-tab .resume {
