@@ -9,10 +9,10 @@ $(".roulette-ss").on("mouseleave", function() {
 })
 
 $(".dollar-ss").on("mouseover", funcion() {
-    $(".roulette-body").show();
+    $(".dollar-body").show();
 }
 $(".dollar-ss").on("mouseleave", function() {
-    $(".roulette-body").hide();
+    $(".dollar-body").hide();
 })
 
 $(function () {
