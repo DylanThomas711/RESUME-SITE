@@ -1,21 +1,21 @@
-$(".dollar-body").hide();
-$(".roulette-body").hide();
-
-$(".roulette-ss").on("mouseover", funcion() {
-    $(".roulette-body").show();
-}
-$(".roulette-ss").on("mouseleave", function() {
-    $(".roulette-body").hide();
-})
-
-$(".dollar-ss").on("mouseover", funcion() {
-    $(".dollar-body").show();
-}
-$(".dollar-ss").on("mouseleave", function() {
-    $(".dollar-body").hide();
-})
-
 $(function () {
+    $(".dollar-body").hide();
+    $(".roulette-body").hide();
+
+    $(".roulette-ss").on("mouseover", funcion() {
+        $(".roulette-body").show();
+    })
+    $(".roulette-ss").on("mouseleave", function() {
+        $(".roulette-body").hide();
+    })
+
+    $(".dollar-ss").on("mouseover", funcion() {
+        $(".dollar-body").show();
+    })
+    $(".dollar-ss").on("mouseleave", function() {
+        $(".dollar-body").hide();
+    })
+    
     $("#resume-tab").hide(1);
     $("#landing-tab").show(1);
     $("#roulette-tab").hide(1);
