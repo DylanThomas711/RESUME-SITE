@@ -1,4 +1,3 @@
-$(function () {
     $(".dollar-body").hide();
     $(".roulette-body").hide();
 
@@ -295,4 +294,3 @@ $("#sub").on("click", function () {
     }
     randy = Math.ceil(Math.random() * 36);
     console.log(randy)
-})
