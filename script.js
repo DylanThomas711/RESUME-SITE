@@ -1,3 +1,20 @@
+$(".dollar-body").hide();
+$(".roulette-body").hide();
+
+$(".roulette-ss").on("mouseover", funcion() {
+    $(".roulette-body").show();
+}
+$(".roulette-ss").on("mouseleave", function() {
+    $(".roulette-body").hide();
+})
+
+$(".dollar-ss").on("mouseover", funcion() {
+    $(".roulette-body").show();
+}
+$(".dollar-ss").on("mouseleave", function() {
+    $(".roulette-body").hide();
+})
+
 $(function () {
     $("#resume-tab").hide(1);
     $("#landing-tab").show(1);
